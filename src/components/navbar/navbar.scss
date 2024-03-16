@@ -1,0 +1,31 @@
+@import '../../app.scss';
+
+.navbar {
+  height: 100px;
+
+  .wrapper {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0 20px;
+  }
+
+  .social {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 99999;
+
+    img {
+      width: 32px;
+      height: 32px;
+      background: white;
+      border-radius: 4px;
+    }
+  } 
+}

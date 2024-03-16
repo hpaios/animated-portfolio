@@ -1,0 +1,129 @@
+@import '../../app.scss';
+
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  overflow: hidden;
+  position: relative;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: -30px 150px 0;
+
+    @include desktop-sm {
+      margin: 0 60px;
+    }
+
+    .textContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 45px;
+
+      @include tablet {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 36px;
+        color: rebeccapurple;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+
+        @include tablet {
+          font-size: 32px;
+        }
+      }
+
+      h1 {
+        font-size: 88px;
+
+        @include mobile {
+          font-size: 36px;
+        }
+      }
+
+      img {
+        width: 50px;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 30px;
+
+        a {
+          padding: 20px;
+          border: 1px solid white;
+          border-radius: 10px;
+          background: transparent;
+          color: white;
+          cursor: pointer;
+          font-weight: 300;
+          font-size: 14px;
+          position: relative;
+          z-index: 999999;
+        }
+
+        a:hover {
+          box-shadow: 0 0 7px 2px white;
+          transition: 1s;
+        }
+      }
+    }
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+
+    @include desktop-sm {
+      right: 60px;
+    }
+
+    @include tablet {
+      height: 50%;
+      width: 100%;
+      right: unset;
+      top: unset;
+      bottom: -60px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    @include mobile {
+      bottom: -20px;
+    }
+
+    img {
+      width: 450px;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+
+      @include tablet {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+  }
+}
