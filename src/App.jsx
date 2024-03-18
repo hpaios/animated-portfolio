@@ -15,16 +15,16 @@ const App = () => {
       <Navbar />
       <Hero />
     </section>
-    <section id="Services">
+    <section>
       <Parallax type="services"/>
     </section>
-    <section>
+    <section id="Skills">
       <Service/>
     </section>
-    <section id="Portfoli">
-      <Parallax type="portfolio"/>
+    <section>
+      <Parallax type="experience"/>
     </section>
-    <div id="Portfolio">
+    <div id="Work">
       <Portfolio />
     </div>
     <section id="Contacts">

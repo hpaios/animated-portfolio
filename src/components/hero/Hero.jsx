@@ -54,7 +54,7 @@ const Hero = () => {
             <motion.a href="#Contacts" variants={textVariants} role='button'>
               Contact me!
             </motion.a>
-            <motion.a href='/cv.pdf' download variants={textVariants} role='button'>
+            <motion.a href='/CV_FE_Hanna_Paios.pdf' download variants={textVariants} role='button'>
               Download my CV!
             </motion.a>
           </motion.div>
